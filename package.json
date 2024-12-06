@@ -1,0 +1,39 @@
+{
+    "name": "hotel-booking-system",
+    "version": "1.0.0",
+    "description": "A simple tool for checking room availability.",
+    "type": "module",
+    "scripts": {
+        "add-shebang": "echo \"#! $(which node)\" | cat - ./dist/index.js > temp && mv temp ./dist/index.js",
+        "build": "tsc && prettier --write . && npm run add-shebang && chmod +x ./dist/index.js",
+        "start": "npm run build && node ./dist/index.js",
+        "lint": "eslint",
+        "tsc": "tsc --noEmit",
+        "test": "jest --passWithNoTests"
+    },
+    "bin": {
+        "hbs": "./dist/index.js"
+    },
+    "author": "0xMIEL",
+    "license": "ISC",
+    "private": true,
+    "devDependencies": {
+        "@eslint/js": "^9.16.0",
+        "@swc/jest": "^0.2.37",
+        "@types/jest": "^29.5.14",
+        "@types/node": "^22.10.1",
+        "eslint": "^9.16.0",
+        "globals": "^15.13.0",
+        "husky": "^9.1.7",
+        "jest": "^29.7.0",
+        "prettier": "^3.4.2",
+        "typescript": "^5.7.2",
+        "typescript-eslint": "^8.17.0"
+    },
+    "prettier": {
+        "semi": false,
+        "arrowParens": "avoid",
+        "tabWidth": 4,
+        "singleQuote": true
+    }
+}
