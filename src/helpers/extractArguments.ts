@@ -1,4 +1,4 @@
-type ExtractedArguments = Record<string, string>
+export type ExtractedArguments = Record<string, string>
 
 const extractArguments = (
     argsArr: string[],
@@ -19,7 +19,7 @@ const extractArguments = (
                 )
 
             extractedArguments[arg] = argsArr[i]
-        } else throw new TypeError(`Wrong option "${arg}"!`)
+        } else throw new TypeError(`Wrong sequence of arguments!`)
     }
 
     return extractedArguments

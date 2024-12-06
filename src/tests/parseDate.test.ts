@@ -1,4 +1,4 @@
-import parseDate from './parseDate.ts'
+import parseDate from '../helpers/parseDate.ts'
 
 describe('function: parseDate', () => {
     test('correct date format, valid date', () => {

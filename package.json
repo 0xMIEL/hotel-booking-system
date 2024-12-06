@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "add-shebang": "echo \"#! $(which node)\" | cat - ./dist/index.js > temp && mv temp ./dist/index.js",
-        "build": "tsc && prettier --write . && npm run add-shebang && chmod +x ./dist/index.js",
+        "build": "tsc && prettier --write --log-level silent . && npm run add-shebang && chmod +x ./dist/index.js",
         "start": "npm run build && node ./dist/index.js",
         "lint": "eslint",
         "tsc": "tsc --noEmit",

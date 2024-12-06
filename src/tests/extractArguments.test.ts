@@ -1,4 +1,4 @@
-import extractArguments from './extractArguments.ts'
+import extractArguments from '../helpers/extractArguments.ts'
 
 describe('extractArguments', () => {
     it('should extract correct arguments based on search terms', () => {
@@ -28,7 +28,7 @@ describe('extractArguments', () => {
         const searchTerms = ['--name', '--age']
 
         expect(() => extractArguments(argsArr, searchTerms)).toThrow(
-            'Wrong option "--invalidOption"!',
+            'Wrong sequence of arguments!',
         )
     })
 
@@ -46,7 +46,7 @@ describe('extractArguments', () => {
         const searchTerms = ['--name', '--age']
 
         expect(() => extractArguments(argsArr, searchTerms)).toThrow(
-            'Wrong option "--color"!',
+            'Wrong sequence of arguments!',
         )
     })
 })
