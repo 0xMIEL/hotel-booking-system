@@ -14,7 +14,8 @@ const parseDate = (unparsedDate: string): Date => {
 
     const day = parseInt(unparsedDate.substring(6, 8))
 
-    if (day <= 0) throw new RangeError('Day must be a positive number!')
+    if (day <= 0)
+        throw new RangeError('Day must be a positive non-zero number!')
 
     if ([0, 2, 4, 6, 7, 9, 11].includes(month) && day > 31)
         throw new RangeError(`Month ${month + 1} has 31 days!`)

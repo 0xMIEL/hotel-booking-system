@@ -56,7 +56,7 @@ describe('function: parseDate', () => {
     test('invalid day (zero)', () => {
         const unparsedDate = '20240200'
         expect(() => parseDate(unparsedDate)).toThrow(
-            'Day must be a positive number!',
+            'Day must be a positive non-zero number!',
         )
     })
 
