@@ -19,8 +19,11 @@ const calculateAvailability = (
 
     if (!roomsOfType.length)
         throw new ReferenceError(
-            `There is no any ${roomType} room in hotel with ${hotel} id.`,
+            `There is no any ${roomType} room in hotel with ${hotel} id!`,
         )
+
+    if (parseInt(arrival) > parseInt(departure))
+        throw new TypeError('Departure cannot be earlier than arrival!')
 
     const takenRooms = bookings.filter(
         b =>

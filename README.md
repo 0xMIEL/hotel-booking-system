@@ -7,35 +7,54 @@ A simple tool for checking room availability.
 First you have to download this repo
 
 ```bash
-    git clone https://github.com/0xMIEL/hotel-booking-system.git
+git clone https://github.com/0xMIEL/hotel-booking-system.git
 ```
 
 Then move to the project file and install dependencies
 
 ```bash
-    cd hotel-booking-system
-    npm install
+cd hotel-booking-system
+npm install
 ```
 
 After successful installing build the code
 
 ```bash
-    npm run build
+npm run build
 ```
 
 Make our CLI open-access everywhere in terminal
 
 ```bash
-    npm link
+npm link
 ```
 
-Now you can use command
+Now you can use command (relative paths from your pwd)
 
 ```bash
-    hbs --hotels ./data/hotels.json --bookings ./data/bookings.json
+hbs --hotels ./hotels.json --bookings ./bookings.json
 ```
 
 hbs - acronym from hotel booking system
+
+## Project Structure
+
+Description of files and directories in the project:
+
+1. **.github/workflows** – GitHub Actions workflows for CI/CD automation.
+2. **.husky** – Contains Git hooks configuration for automating tasks like linting, formatting, and testing before commits or pushes.
+3. **data** – Stores test data and mock files.
+4. **dist** – Contains transpiled or compiled code.
+5. **node_modules** – Installed npm dependencies.
+6. **src** – Source code directory.
+7. **.gitignore** – Specifies files/folders to be ignored by Git.
+8. **.prettierignore** – Specifies files to be ignored by Prettier.
+9. **eslint.config.js** – ESLint configuration file.
+10. **jest.config.js** – Jest testing framework configuration.
+11. **package.json** – Manages project dependencies, scripts, and metadata.
+12. **package-lock.json** – Locks versions of dependencies for consistency.
+13. **README.md** – Project description and usage instructions.
+14. **tsconfig.json** – TypeScript configuration file.
 
 ## Dependencies
 

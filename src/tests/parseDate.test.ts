@@ -35,7 +35,7 @@ describe('function: parseDate', () => {
     test('year out of range (before 2000)', () => {
         const unparsedDate = '19991231'
         expect(() => parseDate(unparsedDate)).toThrow(
-            'Year must be between 2000 and 3000',
+            'Year must be between 2000 and 3000!',
         )
     })
 

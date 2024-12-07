@@ -99,7 +99,7 @@ describe('calculateAvailability', () => {
                 bookings,
             ),
         ).toThrow(
-            'There is no any suite room in hotel with [object Object] id.',
+            'There is no any suite room in hotel with [object Object] id!',
         )
     })
 })

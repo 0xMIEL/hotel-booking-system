@@ -18,6 +18,6 @@ export default function handleUserCommand(
         bookings,
     )
     console.log(
-        `${command}: ${availCount < 1 ? '\x1b[31m' : '\x1b[32m'}${availCount}\x1b[0m`,
+        `\n${command}: ${availCount < 1 ? '\x1b[31m' : '\x1b[32m'}${availCount}\x1b[0m`,
     )
 }
