@@ -5,7 +5,7 @@ const parseDate = (unparsedDate: string): Date => {
     const year = parseInt(unparsedDate.substring(0, 4))
 
     if (year < 2000 || year > 3000)
-        throw new RangeError('Year must be between 2000 and 3000')
+        throw new RangeError('Year must be between 2000 and 3000!')
 
     const month = parseInt(unparsedDate.substring(4, 6)) - 1
 

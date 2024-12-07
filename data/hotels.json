@@ -1,54 +1,175 @@
 [
     {
         "id": "H1",
-
         "name": "Hotel California",
-
         "roomTypes": [
             {
                 "code": "SGL",
-
                 "description": "Single Room",
-
                 "amenities": ["WiFi", "TV"],
-
                 "features": ["Non-smoking"]
             },
-
             {
                 "code": "DBL",
-
                 "description": "Double Room",
-
                 "amenities": ["WiFi", "TV", "Minibar"],
-
                 "features": ["Non-smoking", "Sea View"]
             }
         ],
-
         "rooms": [
             {
                 "roomType": "SGL",
-
                 "roomId": "101"
             },
-
             {
                 "roomType": "SGL",
-
                 "roomId": "102"
             },
-
             {
                 "roomType": "DBL",
-
                 "roomId": "201"
             },
-
             {
                 "roomType": "DBL",
-
                 "roomId": "202"
+            }
+        ]
+    },
+    {
+        "id": "H2",
+        "name": "The Grand Palace",
+        "roomTypes": [
+            {
+                "code": "SGL",
+                "description": "Single Room",
+                "amenities": ["WiFi", "TV", "Air Conditioning"],
+                "features": ["Non-smoking", "Mountain View"]
+            },
+            {
+                "code": "DBL",
+                "description": "Double Room",
+                "amenities": ["WiFi", "TV", "Minibar", "Air Conditioning"],
+                "features": ["Non-smoking", "City View", "Balcony"]
+            },
+            {
+                "code": "TRPL",
+                "description": "Triple Room",
+                "amenities": ["WiFi", "TV", "Minibar", "Air Conditioning"],
+                "features": ["Non-smoking", "Sea View"]
+            }
+        ],
+        "rooms": [
+            {
+                "roomType": "SGL",
+                "roomId": "301"
+            },
+            {
+                "roomType": "SGL",
+                "roomId": "302"
+            },
+            {
+                "roomType": "DBL",
+                "roomId": "401"
+            },
+            {
+                "roomType": "DBL",
+                "roomId": "402"
+            },
+            {
+                "roomType": "TRPL",
+                "roomId": "501"
+            }
+        ]
+    },
+    {
+        "id": "H3",
+        "name": "Mountain Retreat",
+        "roomTypes": [
+            {
+                "code": "SGL",
+                "description": "Single Room",
+                "amenities": ["WiFi", "TV", "Desk"],
+                "features": ["Non-smoking", "Forest View"]
+            },
+            {
+                "code": "DBL",
+                "description": "Double Room",
+                "amenities": ["WiFi", "TV", "Desk", "Minibar"],
+                "features": ["Non-smoking", "Mountain View"]
+            },
+            {
+                "code": "SUITE",
+                "description": "Suite Room",
+                "amenities": ["WiFi", "TV", "Minibar", "Jacuzzi"],
+                "features": ["Non-smoking", "Mountain View", "Balcony"]
+            }
+        ],
+        "rooms": [
+            {
+                "roomType": "SGL",
+                "roomId": "601"
+            },
+            {
+                "roomType": "SGL",
+                "roomId": "602"
+            },
+            {
+                "roomType": "DBL",
+                "roomId": "701"
+            },
+            {
+                "roomType": "DBL",
+                "roomId": "702"
+            },
+            {
+                "roomType": "SUITE",
+                "roomId": "801"
+            }
+        ]
+    },
+    {
+        "id": "H4",
+        "name": "Coastal Resort",
+        "roomTypes": [
+            {
+                "code": "SGL",
+                "description": "Single Room",
+                "amenities": ["WiFi", "TV", "Fridge"],
+                "features": ["Non-smoking", "Ocean View"]
+            },
+            {
+                "code": "DBL",
+                "description": "Double Room",
+                "amenities": ["WiFi", "TV", "Minibar", "Fridge"],
+                "features": ["Non-smoking", "Ocean View", "Balcony"]
+            },
+            {
+                "code": "FAM",
+                "description": "Family Room",
+                "amenities": ["WiFi", "TV", "Fridge", "Minibar"],
+                "features": ["Non-smoking", "Ocean View"]
+            }
+        ],
+        "rooms": [
+            {
+                "roomType": "SGL",
+                "roomId": "901"
+            },
+            {
+                "roomType": "SGL",
+                "roomId": "902"
+            },
+            {
+                "roomType": "DBL",
+                "roomId": "1001"
+            },
+            {
+                "roomType": "DBL",
+                "roomId": "1002"
+            },
+            {
+                "roomType": "FAM",
+                "roomId": "1101"
             }
         ]
     }

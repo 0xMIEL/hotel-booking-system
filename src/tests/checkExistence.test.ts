@@ -1,4 +1,4 @@
-import checkExistence from '../helpers/checkExistence.ts'
+import checkExistence from '../helpers/checkExistence'
 
 describe('checkExistence', () => {
     it('does not throw an error when all options exist', () => {

@@ -1,5 +1,8 @@
 export default {
     transform: {
-        '^.+\\.ts$': '@swc/jest',
+        '\\.[jt]s?$': '@swc/jest',
+    },
+    moduleNameMapper: {
+        '(.+)\\.js': '$1',
     },
 }

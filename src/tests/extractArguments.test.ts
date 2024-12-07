@@ -1,4 +1,4 @@
-import extractArguments from '../helpers/extractArguments.ts'
+import extractArguments from '../helpers/extractArguments'
 
 describe('extractArguments', () => {
     it('should extract correct arguments based on search terms', () => {

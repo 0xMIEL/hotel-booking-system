@@ -1,5 +1,5 @@
-import loadJSONData from '../helpers/loadJSONData.ts'
-import type { Reservation } from './../types/bookingTypes'
+import loadJSONData from '../helpers/loadJSONData'
+import type { Reservation } from './../types/booking'
 
 describe('loadJSONData', () => {
     it('should load and parse JSON data from a file', async () => {
